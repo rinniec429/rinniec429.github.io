@@ -1,9 +1,76 @@
-<html>
- 
-<body>
-  <h1>Erin</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
-</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display and Positioning Cheatsheet</title>
+        <link href="./style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Cheatsheet for CSS Positioning and Display</h1>
+        </header>
+        
+        <h2>CSS Position Property Values</h2>
+
+        <div class="positioning">
+            <table>
+                <tr class="headings">
+                    <th scope="col">Position Value</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Associated Properties</th>
+                </tr>
+                <tr>
+                    <td>Relative</td>
+                    <td>Allows you to position an element relative to its default position</td>
+                    <td>top: moves element down from the top <br><br> bottom: moves element up from the bottom <br><br> left: moves element away from the left side <br><br> right: moves element away from the right side </td>
+                </tr>
+                <tr>
+                    <td>Absolute</td>
+                    <td>When an element's position is set to absolute, all other elements on the page will ignore the element and act like it is not present on the page. The element will be positioned relative to its closest positioned parent element, while offset properties can be used to determine the final position from there.</td>
+                    <td>Width (used because sometimes the size of the element may shrink)</td>
+                </tr>
+                <tr>
+                    <td>Fixed</td>
+                    <td>Used to <em>fix</em> an element to a specific position on the page (regardless of user scrolling)</td>
+                    <td>top, bottom, left, right</td>
+                </tr>
+                <tr>
+                    <td>Sticky</td>
+                    <td>Keeps an element in the document flow as the user scrolls, but <em>sticks</em> to a specified position as the page is scrolled further. 
+                    <td>top, bottom, left, right</td>
+                </tr>
+            </table>
+        </div>
+
+<br>
+<br>
+
+        <h2>CSS Display Property Values</h2>
+
+        <div class="display">
+            <table>
+                <tr class="headings">
+                    <th scope="col">Display Value</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Associated Properties</th>
+                </tr>
+                <tr>
+                    <td>Inline</td>
+                    <td>Inline elements take up as little space as possible. They cannot have manually adjusted <strong>width</strong> or <strong>height</strong></td>
+                    <td rowspan="3"> Float: Commonly used for wrapping text around an image. This will move the element as far left or as far right as possible in the container <br><br> Clear: Prevents elements from "bumping" into each other. You can clear the element's "left"/"right" side, "both", or "none" to determine how the elemnt will act when it meets another element </td>
+                </tr>
+                <tr>
+                    <td>Block</td>
+                    <td>Block elements take up the width of their container and can have manually adjusted <strong>heights</strong></td>
+                </tr>
+                <tr>
+                    <td>Inline-block</td>
+                    <td>Inline-block elements can have set <strong>width</strong> and <strong>height</strong>, but they can also appear next to each other and do not take up their entire container width</td>
+                </tr>
+            </table>
+        </div>
+    </body>
